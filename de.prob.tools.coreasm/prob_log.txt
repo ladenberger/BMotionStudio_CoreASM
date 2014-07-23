@@ -1,0 +1,90 @@
+2014-07-23 11:59:13,753 3011 [main] DEBUG de.prob.Main Method:
+				<init> Line: 93 - Java version: 1.7.0_51
+2014-07-23 11:59:13,835 3093 [Thread-1] DEBUG de.prob.Main Method:
+				<init> Line: 93 - Java version: 1.7.0_51
+2014-07-23 11:59:13,840 3098 [Thread-1] DEBUG de.prob.Main Method:
+				runServer Line: 137 - Shell
+2014-07-23 11:59:13,865 3123 [Thread-3] DEBUG de.prob.webconsole.WebConsole Method:
+				run Line: 64 - Protection Domain: ProtectionDomain  (file:/home/lukas/.gradle/caches/modules-2/files-2.1/de.prob/de.prob.core.kernel/2.0.0-milestone-14-SNAPSHOT/6db066fd5edbbe9e36b7abd1a29d899df5f09f8c/de.prob.core.kernel-2.0.0-milestone-14-SNAPSHOT.jar <no signer certificates>)
+ sun.misc.Launcher$AppClassLoader@713c817
+ <no principals>
+ java.security.Permissions@25dd47eb (
+ ("java.io.FilePermission" "/home/lukas/.gradle/caches/modules-2/files-2.1/de.prob/de.prob.core.kernel/2.0.0-milestone-14-SNAPSHOT/6db066fd5edbbe9e36b7abd1a29d899df5f09f8c/de.prob.core.kernel-2.0.0-milestone-14-SNAPSHOT.jar" "read")
+ ("java.lang.RuntimePermission" "exitVM")
+)
+
+
+2014-07-23 11:59:13,868 3126 [Thread-3] DEBUG de.prob.webconsole.WebConsole Method:
+				run Line: 68 - External Form: file:/home/lukas/.gradle/caches/modules-2/files-2.1/de.prob/de.prob.core.kernel/2.0.0-milestone-14-SNAPSHOT/6db066fd5edbbe9e36b7abd1a29d899df5f09f8c/de.prob.core.kernel-2.0.0-milestone-14-SNAPSHOT.jar
+2014-07-23 11:59:13,908 3166 [main] INFO  de.prob.cli.PrologProcessProvider Method:
+				makeProcess Line: 52 - Starting ProB's Prolog Core. Path is /home/lukas/.prob/probcli.sh
+2014-07-23 11:59:13,924 3182 [main] DEBUG de.prob.cli.PrologProcessProvider Method:
+				makeProcess Line: 54 - Cli started
+2014-07-23 11:59:13,927 3185 [main] DEBUG de.prob.cli.ProBInstanceProvider Method:
+				analyseStdout Line: 105 - Apply cli detection patterns to Running ProB Command-line Interface
+2014-07-23 11:59:13,928 3186 [main] DEBUG de.prob.cli.ProBInstanceProvider Method:
+				analyseStdout Line: 105 - Apply cli detection patterns to probcli -sf
+2014-07-23 11:59:15,148 4406 [main] DEBUG de.prob.cli.ProBInstanceProvider Method:
+				analyseStdout Line: 105 - Apply cli detection patterns to No file to process
+2014-07-23 11:59:15,149 4407 [main] DEBUG de.prob.cli.ProBInstanceProvider Method:
+				analyseStdout Line: 105 - Apply cli detection patterns to Starting Socket Server
+2014-07-23 11:59:15,150 4408 [main] DEBUG de.prob.cli.ProBInstanceProvider Method:
+				analyseStdout Line: 105 - Apply cli detection patterns to Application Path: /home/lukas/.prob
+2014-07-23 11:59:15,150 4408 [main] DEBUG de.prob.cli.ProBInstanceProvider Method:
+				analyseStdout Line: 105 - Apply cli detection patterns to Port: 44277
+2014-07-23 11:59:15,151 4409 [main] INFO  de.prob.cli.PortPattern Method:
+				setValue Line: 34 - Server has startet and listens on port 44277
+2014-07-23 11:59:15,151 4409 [main] DEBUG de.prob.cli.ProBInstanceProvider Method:
+				analyseStdout Line: 105 - Apply cli detection patterns to probcli revision: 14d50561720ab037fd87c464fe98dac316a91886
+2014-07-23 11:59:15,152 4410 [main] DEBUG de.prob.cli.ProBInstanceProvider Method:
+				analyseStdout Line: 105 - Apply cli detection patterns to user interrupt reference id: 14479
+2014-07-23 11:59:15,152 4410 [main] INFO  de.prob.cli.InterruptRefPattern Method:
+				setValue Line: 32 - Server can receive user interrupts via reference 14479
+2014-07-23 11:59:15,154 4412 [main] DEBUG de.prob.cli.ProBConnection Method:
+				connect Line: 40 - Connecting to port 44277 using key b664417ed19ad8d8
+2014-07-23 11:59:15,155 4413 [main] DEBUG de.prob.cli.ProBConnection Method:
+				connect Line: 47 - Connected
+2014-07-23 11:59:15,156 4414 [Thread-6] DEBUG de.prob.cli.ProBInstance Method:
+				readAndLog Line: 54 - -- starting command loop --
+2014-07-23 11:59:15,182 4440 [main] INFO  de.prob.cli.PrologProcessProvider Method:
+				makeProcess Line: 52 - Starting ProB's Prolog Core. Path is /home/lukas/.prob/probcli.sh
+2014-07-23 11:59:15,184 4442 [main] DEBUG de.prob.cli.PrologProcessProvider Method:
+				makeProcess Line: 54 - Cli started
+2014-07-23 11:59:15,187 4445 [main] DEBUG de.prob.cli.ProBInstanceProvider Method:
+				analyseStdout Line: 105 - Apply cli detection patterns to Running ProB Command-line Interface
+2014-07-23 11:59:15,187 4445 [main] DEBUG de.prob.cli.ProBInstanceProvider Method:
+				analyseStdout Line: 105 - Apply cli detection patterns to probcli -sf
+2014-07-23 11:59:15,986 5244 [main] DEBUG de.prob.cli.ProBInstanceProvider Method:
+				analyseStdout Line: 105 - Apply cli detection patterns to No file to process
+2014-07-23 11:59:15,987 5245 [main] DEBUG de.prob.cli.ProBInstanceProvider Method:
+				analyseStdout Line: 105 - Apply cli detection patterns to Starting Socket Server
+2014-07-23 11:59:15,988 5246 [main] DEBUG de.prob.cli.ProBInstanceProvider Method:
+				analyseStdout Line: 105 - Apply cli detection patterns to Application Path: /home/lukas/.prob
+2014-07-23 11:59:15,989 5247 [main] DEBUG de.prob.cli.ProBInstanceProvider Method:
+				analyseStdout Line: 105 - Apply cli detection patterns to Port: 48430
+2014-07-23 11:59:15,989 5247 [main] INFO  de.prob.cli.PortPattern Method:
+				setValue Line: 34 - Server has startet and listens on port 48430
+2014-07-23 11:59:15,989 5247 [main] DEBUG de.prob.cli.ProBInstanceProvider Method:
+				analyseStdout Line: 105 - Apply cli detection patterns to probcli revision: 14d50561720ab037fd87c464fe98dac316a91886
+2014-07-23 11:59:15,990 5248 [main] DEBUG de.prob.cli.ProBInstanceProvider Method:
+				analyseStdout Line: 105 - Apply cli detection patterns to user interrupt reference id: 14492
+2014-07-23 11:59:15,990 5248 [main] INFO  de.prob.cli.InterruptRefPattern Method:
+				setValue Line: 32 - Server can receive user interrupts via reference 14492
+2014-07-23 11:59:15,991 5249 [main] DEBUG de.prob.cli.ProBConnection Method:
+				connect Line: 40 - Connecting to port 48430 using key b664417ed19ad8d8
+2014-07-23 11:59:15,991 5249 [main] DEBUG de.prob.cli.ProBConnection Method:
+				connect Line: 47 - Connected
+2014-07-23 11:59:15,993 5251 [Thread-9] DEBUG de.prob.cli.ProBInstance Method:
+				readAndLog Line: 54 - -- starting command loop --
+2014-07-23 11:59:16,059 5317 [main] INFO  de.prob.cli.ProBConnection Method:
+				send Line: 65 - get_version(Major,Minor,Service,Qualifier,SvnRevision,LastChangedDate,PrologInfo),true.
+
+2014-07-23 11:59:16,069 5327 [Thread-9] DEBUG de.prob.cli.ProBInstance Method:
+				readAndLog Line: 54 - Connected: 127.0.0.1
+2014-07-23 11:59:16,069 5327 [main] INFO  de.prob.cli.ProBConnection Method:
+				send Line: 78 - yes('.'(=('Major',1),'.'(=('Minor',4),'.'(=('PrologInfo','SICStus 4.2.3 (x86_64-linux-glibc2.7): Fri Oct  5 15:52:44 CEST 2012'),'.'(=('LastChangedDate','Mon May 12 19:36:20 2014 +0200'),'.'(=('Qualifier',rc1),'.'(=('Service',0),'.'(=('SvnRevision','14d50561720ab037fd87c464fe98dac316a91886'),[]))))))))
+2014-07-23 11:59:16,830 6088 [main] INFO  de.prob.cli.ProBConnection Method:
+				send Line: 65 - getErrorMessages(Errors),true.
+
+2014-07-23 11:59:16,831 6089 [main] INFO  de.prob.cli.ProBConnection Method:
+				send Line: 78 - yes('.'(=('Errors',[]),[]))
