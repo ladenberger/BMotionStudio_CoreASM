@@ -6,4 +6,5 @@
 **/pom.xml
 .gradle/
 **/build/
+**/prob_log.txt
 *.class
