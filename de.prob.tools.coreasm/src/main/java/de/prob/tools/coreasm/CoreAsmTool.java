@@ -10,6 +10,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.coreasm.engine.CoreASMEngine;
 import org.coreasm.engine.Engine;
 import org.coreasm.engine.absstorage.AbstractUniverse;
@@ -58,11 +60,20 @@ import org.coreasm.engine.plugins.time.TimePlugin;
 import org.coreasm.engine.plugins.tree.TreePlugin;
 import org.coreasm.engine.plugins.turboasm.TurboASMPlugin;
 
+import com.google.gson.JsonElement;
+
+import de.prob.bmotion.*;
 import de.prob.ui.api.ITool;
+import de.prob.ui.api.ToolRegistry;
 
-public class CoreAsmTool implements ITool {
+public class CoreAsmTool implements ITool, IObserver {
+
 	private CoreASMEngine e;
-
+	
+	private String toolId;
+	
+	private ToolRegistry toolRegistry;
+	
 	private class AsmToolEngine extends Engine {
 		@Override
 		protected void loadCatalog() throws IOException {
@@ -116,10 +127,12 @@ public class CoreAsmTool implements ITool {
 		}
 	}
 
-	public CoreAsmTool(Reader specification) {
+	public CoreAsmTool(ToolRegistry toolRegistry, String toolId,
+			Reader specification) {
+		this.toolId = toolId;
+		this.toolRegistry = toolRegistry;
 		if (e == null)
 			e = new AsmToolEngine();
-
 		if (specification != null)
 			try {
 				e.loadSpecification(specification);
@@ -132,8 +145,9 @@ public class CoreAsmTool implements ITool {
 	}
 
 	// requires a coreAsm specification to work
-	public CoreAsmTool(String specification) {
-		this(new StringReader(specification));
+	public CoreAsmTool(ToolRegistry toolRegistry, String toolId,
+			String specification) {
+		this(toolRegistry, toolId, new StringReader(specification));
 	}
 
 	@Override
@@ -142,16 +156,14 @@ public class CoreAsmTool implements ITool {
 	}
 
 	@Override
-	public String doStep(String arg0, String arg1, String... arg2) {
+	public String doStep(String stateref, String event, String... parameters) {
 		e.step();
 		e.waitWhileBusy();
-
 		StringBuffer output = new StringBuffer();
 		String state = getCurrentState();
-
 		output.append("{ \"mode\": \"" + e.getEngineMode().toString()
 				+ "\", \"state\": " + state);
-
+		toolRegistry.notifyToolChange(this);
 		return output.toString();
 	}
 
@@ -319,6 +331,17 @@ public class CoreAsmTool implements ITool {
 
 	@Override
 	public String getName() {
+		return toolId;
+	}
+
+	@Override
+	public IBMotionGroovyObserver getBMotionGroovyObserver(
+			BMotionStudioSession bmsSession, JsonElement jsonObserver) {
+		return new CoreAsmToolObserver(bmsSession, jsonObserver);
+	}
+
+	@Override
+	public String getModelData(String dataParameter, HttpServletRequest req) {
 		// TODO Auto-generated method stub
 		return null;
 	}
