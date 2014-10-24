@@ -13,6 +13,7 @@ repositories {
 }
 
 dependencies {
+	compile files('libs/CoreASM.jar')
 	compile "de.prob:de.prob.core.kernel:${prob_version}"
 }
 
