@@ -3,7 +3,6 @@
 **/.project
 **/.settings
 **/bin
-**/pom.xml
 .gradle/
 **/build/
 **/prob_log.txt
