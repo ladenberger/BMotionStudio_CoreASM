@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="CoreASM">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/CoreASM.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/libs/CoreASM.jar!/lib/JSAP-2.1/doc/javadoc" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/libs/CoreASM.jar!/lib/JSAP-2.1/src/java" />
+      <root url="jar://$PROJECT_DIR$/libs/CoreASM.jar!/test/unittest" />
+    </SOURCES>
+  </library>
+</component>

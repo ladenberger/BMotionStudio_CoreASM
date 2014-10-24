@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: de.tla:tlatools:1.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/de/tla/tlatools/1.0.0-SNAPSHOT/tlatools-1.0.0-20141023.183511-256.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/de/tla/tlatools/1.0.0-SNAPSHOT/tlatools-1.0.0-20141023.183511-256-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/de/tla/tlatools/1.0.0-SNAPSHOT/tlatools-1.0.0-20141023.183511-256-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

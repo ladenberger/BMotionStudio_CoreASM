@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: de.prob2:de.prob2.kernel:2.0.0-milestone-17-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/de/prob2/de.prob2.kernel/2.0.0-milestone-17-SNAPSHOT/de.prob2.kernel-2.0.0-milestone-17-20141020.152543-86.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/de/prob2/de.prob2.kernel/2.0.0-milestone-17-SNAPSHOT/de.prob2.kernel-2.0.0-milestone-17-20141020.152543-86-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/de/prob2/de.prob2.kernel/2.0.0-milestone-17-SNAPSHOT/de.prob2.kernel-2.0.0-milestone-17-20141020.152543-86-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

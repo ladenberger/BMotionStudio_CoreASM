@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: de.prob:tla2bAST:1.0.5-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/de/prob/tla2bAST/1.0.5-SNAPSHOT/tla2bAST-1.0.5-20141022.181422-202.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/de/prob/tla2bAST/1.0.5-SNAPSHOT/tla2bAST-1.0.5-20141022.181422-202-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/de/prob/tla2bAST/1.0.5-SNAPSHOT/tla2bAST-1.0.5-20141022.181422-202-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
